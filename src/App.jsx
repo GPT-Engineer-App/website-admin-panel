@@ -7,6 +7,7 @@ import SEO from "./pages/SEO.jsx";
 import About from "./pages/About.jsx";
 import Settings from "./pages/Settings.jsx";
 import Navbar from "./components/Navbar.jsx";
+import AdminAbout from "./pages/AdminAbout.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/seo" element={<SEO />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/settings" element={<Settings />} />
+        <Route exact path="/admin/about" element={<AdminAbout />} />
       </Routes>
     </Router>
   );

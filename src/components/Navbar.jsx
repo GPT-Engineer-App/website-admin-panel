@@ -25,8 +25,8 @@ const Navbar = () => {
             <Button as={Link} to="/seo" colorScheme="teal" variant="link">
               SEO
             </Button>
-            <Button as={Link} to="/about" colorScheme="teal" variant="link">
-              About
+            <Button as={Link} to="/admin/about" colorScheme="teal" variant="link">
+              Manage About
             </Button>
             <Button as={Link} to="/settings" colorScheme="teal" variant="link">
               Settings
