@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Button, FormControl, FormLabel, Input, Textarea, VStack, Heading, Text, HStack } from "@chakra-ui/react";
-import { AddIcon, EditIcon, DeleteIcon } from "react-icons/fa";
+import { FaPlus, FaEdit, FaTrash } from "react-icons/fa";
 
 const AdminAbout = () => {
   const [aboutContent, setAboutContent] = useState("");
@@ -65,7 +65,7 @@ const AdminAbout = () => {
             <Button colorScheme="teal" onClick={handleSave}>
               Save
             </Button>
-            <Button colorScheme="red" onClick={handleDelete}>
+            <Button leftIcon={<FaTrash />} colorScheme="red" onClick={handleDelete}>
               Delete
             </Button>
           </HStack>
@@ -73,7 +73,7 @@ const AdminAbout = () => {
       ) : (
         <VStack spacing={4}>
           <Text>{aboutContent}</Text>
-          <Button leftIcon={<EditIcon />} colorScheme="teal" onClick={handleEdit}>
+          <Button leftIcon={<FaEdit />} colorScheme="teal" onClick={handleEdit}>
             Edit
           </Button>
         </VStack>
